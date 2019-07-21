@@ -34,6 +34,7 @@ const removeFromPlaylist = (series, element) => {
 
 const bingeWatch = (playlist) => {
   if (playlist.length > 0) {
+    debugger
     let first = getNextEpisodeInPlaylist(playlist);
     let removed = removeFromPlaylist(playlist, first);
     return bingeWatch(removed);
